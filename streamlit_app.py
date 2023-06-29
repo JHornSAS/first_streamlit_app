@@ -44,3 +44,4 @@ add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfru
 streamlit.write('Thanks for adding ', add_my_fruit)
 cursor = my_cnx.cursor()
 cursor.execute("INSERT INTO FRUIT_LOAD_LIST VALUES (add_my_fruit)")
+cursor.commit()
